@@ -1,0 +1,5 @@
+appId: org.reactjs.native.example.ModalA11yRepro
+name: Close the modal by coordinates (bypasses the AX tree)
+---
+- tapOn:
+    point: 50%, 93%

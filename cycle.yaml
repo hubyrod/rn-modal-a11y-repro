@@ -1,0 +1,15 @@
+appId: org.reactjs.native.example.ModalA11yRepro
+name: One modal open/close cycle via accessibility taps, settled
+---
+- tapOn: 'OPEN'
+- extendedWaitUntil:
+    visible: 'CLOSE'
+    timeout: 10000
+- waitForAnimationToEnd:
+    timeout: 3000
+- tapOn: 'CLOSE'
+- extendedWaitUntil:
+    visible: 'OPEN'
+    timeout: 10000
+- waitForAnimationToEnd:
+    timeout: 3000

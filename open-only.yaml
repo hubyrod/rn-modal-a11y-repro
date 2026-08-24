@@ -1,0 +1,5 @@
+appId: org.reactjs.native.example.ModalA11yRepro
+name: Open the modal and assert its content is in the accessibility tree
+---
+- tapOn: 'OPEN'
+- assertVisible: 'CLOSE'
