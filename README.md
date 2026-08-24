@@ -5,7 +5,8 @@ Minimal reproducer for a React Native (new architecture / Fabric) iOS bug:
 present/dismiss cycles** — the modal renders on screen and touch works, but
 XCUITest/VoiceOver see only status-bar elements.
 
-Bare `@react-native-community/cli init` template (RN 0.86.2). The only
+Bare `@react-native-community/cli init` template (RN 0.86.2; also reproduced
+identically on a fresh RN **0.87.0** template with the same `App.tsx`). The only
 changes: `App.tsx` (a button presenting a transparent slide-animation Modal
 with a close button) and the Maestro flows below.
 
